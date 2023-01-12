@@ -1,0 +1,16 @@
+{
+  "name": "@acme/api",
+  "version": "1.0.0",
+  "author": "tomheaton",
+  "license": "MIT",
+  "private": true,
+  "main": "./index.ts",
+  "types": "./index.ts",
+  "dependencies": {
+    "@acme/db": "*",
+    "@trpc/server": "^10.4.0",
+    "superjson": "^1.10.0",
+    "trpc-openapi": "^1.1.1",
+    "zod": "^3.19.1"
+  }
+}

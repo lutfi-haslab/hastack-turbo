@@ -1,0 +1,33 @@
+{
+    "name": "has-stack",
+    "description": "Next.js + Expo + tRPC + clerk",
+    "version": "1.0.0",
+    "author": "lutfi-haslab",
+    "license": "MIT",
+    "private": true,
+    "workspaces": [
+        "apps/*",
+        "packages/*"
+    ],
+    "scripts": {
+        "build": "turbo run build",
+        "test": "turbo run test",
+        "lint": "turbo run lint",
+        "dev": "dotenv -- turbo run dev",
+        "clean:workspaces": "turbo clean",
+        "db:generate": "turbo db:generate",
+        "db:push": "turbo db:push db:generate",
+        "check": "prettier --check \"**/*.{js,jsx,ts,tsx,json}\" --ignore-path .gitignore",
+        "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json}\" --ignore-path .gitignore"
+    },
+    "devDependencies": {
+        "dotenv-cli": "^6.0.0",
+        "prettier": "^2.7.1",
+        "turbo": "^1.6.3"
+    },
+    "engineStrict": true,
+    "engines": {
+        "npm": "please use yarn!",
+        "yarn": ">= 1.22.4"
+    }
+}

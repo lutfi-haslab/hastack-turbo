@@ -1,0 +1,43 @@
+{
+  "name": "@next/web",
+  "version": "1.0.0",
+  "author": "lutfi-haslab",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "dotenv -e ../../.env -- next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@acme/ui": "*",
+    "@acme/api": "*",
+    "@acme/utils": "*",
+    "@clerk/nextjs": "^4.6.15",
+    "@tanstack/react-query": "^4.18.0",
+    "@trpc/client": "^10.4.0",
+    "@trpc/next": "^10.4.0",
+    "@trpc/react-query": "^10.4.0",
+    "@trpc/server": "^10.4.0",
+    "next": "^13.1.1",
+    "nextjs-cors": "^2.1.2",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-native-web": "^0.18.10",
+    "trpc-client-devtools-link": "^0.1.1",
+    "zod": "^3.19.1"
+  },
+  "devDependencies": {
+    "@types/node": "18.11.9",
+    "@types/react": "18.0.25",
+    "@types/react-dom": "18.0.9",
+    "autoprefixer": "^10.4.13",
+    "dotenv-cli": "^6.0.0",
+    "eslint": "8.28.0",
+    "eslint-config-next": "13.0.5",
+    "postcss": "^8.4.19",
+    "tailwindcss": "^3.2.4",
+    "typescript": "4.9.3"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "expo": {
+    "name": "Next Expo tRPC",
+    "slug": "next-expo-trpc",
+    "owner": "tomheaton",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "userInterfaceStyle": "light",
+    "scheme": "myapp",
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "package": "dev.tomheaton.nextexpotrpc"
+    },
+    "extra": {
+      "apiUrl": "https://next-expo-trpc.tomheaton.dev",
+      "eas": {
+        "projectId": "0f7107e9-e038-4ccd-8a33-5b688ffddcb7"
+      }
+    }
+  }
+}
