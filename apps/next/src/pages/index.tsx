@@ -11,10 +11,10 @@ type HeaderProps = {
   children: JSX.Element;
 };
 
-const PostCard: React.FC<{post: string}> = ({post}) => {
+const PostCard: React.FC<{post: string, title: string}> = ({post, title}) => {
   return (
     <div className="max-w-2xl  p-4 transition-all hover:scale-[105%]">
-      <h2 className="text-2xl font-bold text-blue-700">{post}</h2>
+      <h2 className="text-2xl font-bold text-blue-700">{title}</h2>
       <p>{post}</p>
     </div>
   );
@@ -43,7 +43,7 @@ const Index: NextPage = () => {
         <p className="text-xl text-black font-semibold">Component using tRPC</p>
           {post.data &&
             post.data.map((item) => {
-              return <PostCard key={item.id} post={item.content} />;
+              return <PostCard key={item.id} post={item.content} title={item.title} />;
             })}
         </div>
         <div className="flex flex-col justify-center items-center bg-slate-400 rounded-xl m-3">
